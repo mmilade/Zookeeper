@@ -123,32 +123,92 @@
 # print(output)
 
 
-# ---------------
-print('Hello! My name is Aid.')
-print('I was created in 2020.')
-print('Please, remind me your name.')
+# # ---------------
+# print('Hello! My name is Aid.')
+# print('I was created in 2020.')
+# print('Please, remind me your name.')
+#
+# name = input()
+#
+# print('What a great name you have, ' + name + '!')
+# print('Let me guess your age.')
+# print('Enter remainders of dividing your age by 3, 5 and 7.')
+#
+# rem3 = int(input())
+# rem5 = int(input())
+# rem7 = int(input())
+#
+# age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+#
+# print("Your age is " + str(age) + "; that's a good time to start programming!")
+# print('Now I will prove to you that I can count to any number you want.')
+#
+# # read a number and count to it here
+# count = int(input())
+# counter = 0
+#
+# while counter <= count:
+#     print(str(counter) + "!")
+#     counter += 1
+#
+# print('Completed, have a nice day!')
 
-name = input()
+#----------------
+# def is_even(number):
+#     return number % 2 == 0
 
-print('What a great name you have, ' + name + '!')
-print('Let me guess your age.')
-print('Enter remainders of dividing your age by 3, 5 and 7.')
+#-----------------
+#
+# def captain_adder(name):
+#     print("captain" + name)
+#
+# captain_adder(Milad)
 
-rem3 = int(input())
-rem5 = int(input())
-rem7 = int(input())
+# ----------------
+# An if-else statement is another type of conditional expressions in Python.
+# It differs from an if statement by the presence of the additional keyword else.
+# The block of code that else contains executes when the condition of
+# your if statement does not hold (the Boolean value is False).
+# Since an else statement is an alternative for an if statement,
+# only one block of code can be executed.
+# Also, else doesn't require any condition:
 
-age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+# if today == "holiday":
+#     print("Lucky you!")
+# else:
+#     print("Keep your chin up, then.")
 
-print("Your age is " + str(age) + "; that's a good time to start programming!")
-print('Now I will prove to you that I can count to any number you want.')
+# Note that the 4-space indentation rule applies here too.
 
-# read a number and count to it here
-count = int(input())
-counter = 0
+# As you may soon find out, programmers do like all sorts of shortcuts.
+# For conditional expressions there's a trick as well – you can write an
+# if-else statement in one line just like that:
 
-while counter <= count:
-    print(str(counter) + "!")
-    counter += 1
+# print("It’s a day now!" if sun else "It’s a night for sure!")
 
-print('Completed, have a nice day!')
+# Or, more generally:
+
+# first_alternative if condition else second_alternative
+# It's a matter of convenience, but remember that the code you create should still be readable.
+
+# --------------------
+# if x < 100:
+#     print('x < 100')
+# else:
+#     if x == 100:
+#         print('x = 100')
+#     else:
+#         print('x > 100')
+#     print('This will be printed only because x >= 100')
+
+
+# --------------------
+year = int(input())
+
+if year % 400 == 0:
+    print("Leap")
+else:
+    if year % 4 == 0 and year % 100 != 0:
+        print("Leap")
+    else:
+        print("Ordinary")
