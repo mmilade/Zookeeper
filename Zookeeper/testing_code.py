@@ -203,12 +203,94 @@
 
 
 # --------------------
-year = int(input())
+# year = int(input())
+#
+# if year % 400 == 0:
+#     print("Leap")
+# else:
+#     if year % 4 == 0 and year % 100 != 0:
+#         print("Leap")
+#     else:
+#         print("Ordinary")
 
-if year % 400 == 0:
-    print("Leap")
-else:
-    if year % 4 == 0 and year % 100 != 0:
-        print("Leap")
+# ----------------------
+# number = int(input())
+#
+# if number < 0:
+#     print("negative")
+# elif number > 0:
+#     print("positive")
+# else:
+#     print(number)
+
+# ----------------------
+#
+# Let's write a simple calculator!
+# It will read 3 lines:
+#
+# the first number
+# the second number
+# the arithmetic operation.
+# Numbers are floats!
+#
+# The output is the result of the following: first_number operation second_number.
+#
+# Operations are: +, -, /, *, mod, pow, div.
+# mod — modulo operation, i.e. the remainder of the division first_numer % second_number,
+# pow — exponentiation, the first number will be the base and the second — the power: first_number ** second_number,
+# div — integer division first_number // second_number.
+# Note that if the second number is 0 and you want to perform any of the operations /, mod, or div, the calculator should say "Division by 0!"
+# Sample Input 1:
+# 5.0
+# 0.0
+# mod
+# Sample Output 1:
+# Division by 0!
+# Sample Input 2:
+# -12.0
+# -8.0
+# *
+# Sample Output 2:
+# 96.0
+# Sample Input 3:
+# 5.0
+# 10.0
+# /
+# Sample Output 3:
+# 0.5
+
+
+
+
+first_number = float()
+
+while first_number != "exit":
+    first_number = float(input())
+    second_number = float(input())
+    operation = input()
+    if first_number == "exit":
+        print("See you!")
     else:
-        print("Ordinary")
+        if operation == "+":
+            print(first_number + second_number)
+        elif operation == "-":
+            print(first_number - second_number)
+        elif operation == "/":
+            if second_number == 0:
+                print("Division by 0!")
+            else:
+                print(first_number / second_number)
+        elif operation == "*":
+            print(first_number * second_number)
+        elif operation == "mod":
+            if second_number == 0:
+                print("Division by 0!")
+            else:
+                print(first_number % second_number)
+        elif operation == "pow":
+            print(first_number ** second_number)
+        elif operation == "div":
+            if second_number == 0:
+                print("Division by 0!")
+            else:
+                print(first_number // second_number)
