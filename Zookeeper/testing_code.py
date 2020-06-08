@@ -260,83 +260,84 @@
 # 0.5
 
 
+#
+#
+# first_number = float(input())
+# second_number = float(input())
+# operation = input()
+#
+# def check_for_zero():
+#     if second_number == 0:
+#         print("Division by 0!")
+#     else:
+#         print(first_number / second_number)
+#
+# if operation == "+":
+#     print(first_number + second_number)
+# elif operation == "-":
+#     print(first_number - second_number)
+# elif operation == "/":
+#     check_for_zero()
+# elif operation == "*":
+#     print(first_number * second_number)
+# elif operation == "mod":
+#     if second_number == 0:
+#         print("Division by 0!")
+#     else:
+#         print(first_number % second_number)
+# elif operation == "pow":
+#     print(first_number ** second_number)
+# elif operation == "div":
+#     if second_number == 0:
+#         print("Division by 0!")
+#     else:
+#         print(first_number // second_number)
+#
+# # ------------------
+# # a better solution
+# number1, number2, operation = float(input()), float(input()), input()
+#
+# if operation == "+":
+#     product = number1 + number2
+# elif operation == "-":
+#     product = number1 - number2
+# elif operation == "/":
+#     product = "Division by 0!" if number2 == 0 else number1 / number2
+# elif operation == "*":
+#     product = number1 * number2
+# elif operation == "mod":
+#     product = "Division by 0!" if number2 == 0 else number1 % number2
+# elif operation == "pow":
+#     product = number1 ** number2
+# elif operation == "div":
+#     product = "Division by 0!" if number2 == 0 else number1 // number2
+# else:
+#     product = "Unsupported"
+#
+# print(product)
+#
+# # ------------------
+# # another solution
+# first_number = float(input())
+# second_number = float(input())
+# operation = input()
+# list_operation = ['+', '-', '/', '*', 'mod', 'pow', 'div']
+# while operation in list_operation:
+#     if operation == '*':
+#         print(first_number * second_number)
+#     elif operation == '/' and first_number != 0.0 and second_number != 0.0:
+#         print(first_number / second_number)
+#     elif operation == '+':
+#         print(first_number + second_number)
+#     elif operation == '-':
+#         print(first_number - second_number)
+#     elif operation == 'mod' and first_number != 0.0 and second_number != 0.0:
+#         print(first_number % second_number)
+#     elif operation == 'pow':
+#         print(first_number ** second_number)
+#     elif operation == 'div' and first_number != 0.0 and second_number != 0.0:
+#         print(first_number // second_number)
+#     else:
+#         print("Division by 0!")
+#     break
 
-
-first_number = float(input())
-second_number = float(input())
-operation = input()
-
-def check_for_zero():
-    if second_number == 0:
-        print("Division by 0!")
-    else:
-        print(first_number / second_number)
-
-if operation == "+":
-    print(first_number + second_number)
-elif operation == "-":
-    print(first_number - second_number)
-elif operation == "/":
-    check_for_zero()
-elif operation == "*":
-    print(first_number * second_number)
-elif operation == "mod":
-    if second_number == 0:
-        print("Division by 0!")
-    else:
-        print(first_number % second_number)
-elif operation == "pow":
-    print(first_number ** second_number)
-elif operation == "div":
-    if second_number == 0:
-        print("Division by 0!")
-    else:
-        print(first_number // second_number)
-
-# ------------------
-# a better solution
-number1, number2, operation = float(input()), float(input()), input()
-
-if operation == "+":
-    product = number1 + number2
-elif operation == "-":
-    product = number1 - number2
-elif operation == "/":
-    product = "Division by 0!" if number2 == 0 else number1 / number2
-elif operation == "*":
-    product = number1 * number2
-elif operation == "mod":
-    product = "Division by 0!" if number2 == 0 else number1 % number2
-elif operation == "pow":
-    product = number1 ** number2
-elif operation == "div":
-    product = "Division by 0!" if number2 == 0 else number1 // number2
-else:
-    product = "Unsupported"
-
-print(product)
-
-# ------------------
-# another solution
-first_number = float(input())
-second_number = float(input())
-operation = input()
-list_operation = ['+', '-', '/', '*', 'mod', 'pow', 'div']
-while operation in list_operation:
-    if operation == '*':
-        print(first_number * second_number)
-    elif operation == '/' and first_number != 0.0 and second_number != 0.0:
-        print(first_number / second_number)
-    elif operation == '+':
-        print(first_number + second_number)
-    elif operation == '-':
-        print(first_number - second_number)
-    elif operation == 'mod' and first_number != 0.0 and second_number != 0.0:
-        print(first_number % second_number)
-    elif operation == 'pow':
-        print(first_number ** second_number)
-    elif operation == 'div' and first_number != 0.0 and second_number != 0.0:
-        print(first_number // second_number)
-    else:
-        print("Division by 0!")
-    break
