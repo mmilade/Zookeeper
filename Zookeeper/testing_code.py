@@ -341,3 +341,35 @@
 #         print("Division by 0!")
 #     break
 
+# ------------------------
+# # formatting
+# print('Mix {}, {} and a {} to make an ideal omelet.'.format('2 eggs', '30 g of milk', 'pinch of salt'))
+# print('{0} in the {1} by Frank Sinatra'.format('Strangers', 'Night'))
+#
+# print('The {film} at {theatre} was {adjective}!'.format(film='Lord of the Rings',
+#                                                         adjective='incredible',
+#                                                         theatre='BFI IMAX'))
+# 
+# Also, you can combine both positional and keyword arguments:
+# print('The {0} was {adjective}!'.format('Lord of the Rings', adjective='incredible'))
+#
+# print(f'{needed_percent}% from {hundred_percent_number} is {needed_percent_number}')
+# # 16% from 1823 is 291.68
+#
+# print(f'Rounding {needed_percent_number} to 1 decimal place is {needed_percent_number:.1f}')
+# # Rounding 291.68 to 1 decimal place is 291.7
+
+# # -----------------------
+# from math import sqrt
+#
+# a = int(input())
+# b = int(input())
+# c = int(input())
+#
+# p = float((a + b + c) / 2)
+#
+# # print(p)
+#
+# S = sqrt(p * (p - a) * (p - b) * (p - c))
+#
+# print(S)
