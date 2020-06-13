@@ -361,6 +361,7 @@
 
 # # -----------------------
 # from math import sqrt
+# Math functions → Heron's formula
 #
 # a = int(input())
 # b = int(input())
@@ -373,3 +374,30 @@
 # S = sqrt(p * (p - a) * (p - b) * (p - c))
 #
 # print(S)
+
+# # -----------------------
+# Math functions → Cotangent
+#
+# import math
+#
+# degrees = float(input())
+#
+# radian = degrees * (math.pi / 180)
+#
+# contagent = round(1 / math.tan(radian), 10)
+#
+# print(contagent)
+
+
+# # -----------------------
+# Math functions → The logarithmic value
+#
+# import math
+#
+# int1 = int(input())
+# int2 = int(input())
+#
+# if int2 < 2:
+#     print(round(math.log(int1), 2))
+# else:
+#     print(round(math.log(int1, int2), 2))
